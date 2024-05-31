@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Ajax Api</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header-box">
+        <h1>Weather App <img src="./img/cloudy.png" alt="" /></h1>
+      </div>
+      <div class="text-input">
+        <input
+          type="text"
+          autocomplete="off"
+          id="cityInput"
+          placeholder="Please enter a City name"
+        />
+        <label for="cityInput">City Name</label>
+      </div>
+      <div class="select-box">
+        <p>Please choose temperature</p>
+        <select class="select-box" name="choose-temp" id="temp-input">
+          <option value="1">Farenheit</option>
+          <option value="2">Celcius</option>
+        </select>
+      </div>
+      <div class="submit-box">
+        <input type="submit" name="" value="Find" id="submit-button" />
+      </div>
+    </div>
+    <div class="hidden-result d-none">
+      <div class="hidden-header">
+        <h1 id="city-name">Baku, Azerbaijan</h1>
+      </div>
+      <div class="temperature-box">
+        <h1 id="temp-condition">20°C Windy</h1>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+      integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
